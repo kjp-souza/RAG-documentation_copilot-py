@@ -1,12 +1,12 @@
 # Multiple LLM copilot with Retrieval Augmented Generation (RAG)
 
-The first script `local-copilot.py` can call multiple LLM APIs (currently using only (https://platform.openai.com/docs/overview)[OpenAI] and (https://ollama.com/)[Ollama]) locally.
+The first script `local-copilot.py` can call multiple LLM APIs (currently using only [OpenAI](https://platform.openai.com/docs/overview) and [Ollama](https://ollama.com/)) locally.
 
 ## Call LLMs locally
 
 ### Getting Started:
 
--   Create a (https://docs.python.org/3/library/venv.html)[Python] environment or ()[Conda] environment using an up-to-date Python version. This project uses Python version 3.11.5. You can use a command, such as: `conda create -n myenv python=3.11.5`.
+-   Create a [Python](https://docs.python.org/3/library/venv.html) environment or [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) environment using an up-to-date Python version. This project uses `Python version 3.11.5`. You can use a command, such as: `conda create -n myenv python=3.11.5`.
 
 -   Install the `requirements.txt`
 
@@ -17,11 +17,11 @@ The first script `local-copilot.py` can call multiple LLM APIs (currently using 
 
 ## Call LLMs using a RAG knowledge base
 
-RAG allows ingesting relevant content based on your needs so the LLMs can provide more relavant and up-to-date answers based on the knowledge you wish to ingest. This script accepts PDF, Markdown or YAML files. It uses (https://python.langchain.com/docs/integrations/vectorstores/faiss/)[FAISS vector indexing - Langchain's integration] and also open-source (https://huggingface.co/BAAI/bge-m3)[HuggingFace sentence transformers] or OpenAI embedding models.
+RAG allows ingesting relevant content based on your needs so the LLMs can provide more relavant and up-to-date answers based on the knowledge you wish to ingest. This script accepts PDF, Markdown or YAML files. It uses [FAISS vector indexing - Langchain's integration](https://python.langchain.com/docs/integrations/vectorstores/faiss/) and open-source [HuggingFace sentence transformers] (https://huggingface.co/BAAI/bge-m3) or [OpenAI](https://platform.openai.com/docs/overview) embedding models.
 
 ### Getting Started:
 
--   Create a (https://docs.python.org/3/library/venv.html)[Python] environment or ()[Conda] environment using an up-to-date Python version. This project uses Python version 3.11.5. You can use a command, such as: `conda create -n myenv python=3.11.5`.
+-   Create a [Python](https://docs.python.org/3/library/venv.html) environment or [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) environment using an up-to-date Python version. This project uses `Python version 3.11.5`. You can use a command, such as: `conda create -n myenv python=3.11.5`.
 
 -   Install the `requirements2.txt`
 
