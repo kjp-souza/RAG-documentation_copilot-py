@@ -17,7 +17,7 @@ The first script `local-copilot.py` can call multiple LLM APIs (currently using 
 
 ## Call LLMs using a RAG knowledge base
 
-RAG allows ingesting relevant content based on your needs so the LLMs can provide more relavant and up-to-date answers based on the knowledge you wish to ingest. This script accepts PDF, Markdown or YAML files. It uses [FAISS vector indexing - Langchain's integration](https://python.langchain.com/docs/integrations/vectorstores/faiss/) and open-source [HuggingFace sentence transformers] (https://huggingface.co/BAAI/bge-m3) or [OpenAI](https://platform.openai.com/docs/overview) embedding models.
+RAG allows ingesting relevant content based on your needs so the LLMs can provide more relavant and up-to-date answers based on the knowledge you wish to ingest. This script accepts PDF, Markdown or YAML files. It uses [FAISS vector indexing - Langchain's integration](https://python.langchain.com/docs/integrations/vectorstores/faiss/) and open-source [HuggingFace sentence transformers](https://huggingface.co/BAAI/bge-m3) or [OpenAI](https://platform.openai.com/docs/overview) embedding models.
 
 ### Getting Started:
 

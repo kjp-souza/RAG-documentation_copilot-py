@@ -67,7 +67,7 @@ def split_and_embed(docs):
 
     # embeddings = OpenAIEmbeddings()  # Change to this to use the OpenAI embedding model
     # Here, we are using an open-source embedding model:
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3")
     vector_store = FAISS.from_documents(chunks, embeddings)
 
     index = vector_store  # Store the FAISS index
