@@ -6,11 +6,13 @@ The first script `local-copilot.py` can call multiple LLM APIs (currently using 
 
 ### Getting Started:
 
-- Create a (https://docs.python.org/3/library/venv.html)[Python] environment or ()[Conda] environment using an up-to-date Python version. This project uses Python version 3.11.5. You can use a command, such as: `conda create -n myenv python=3.11.5`.
+-   Create a (https://docs.python.org/3/library/venv.html)[Python] environment or ()[Conda] environment using an up-to-date Python version. This project uses Python version 3.11.5. You can use a command, such as: `conda create -n myenv python=3.11.5`.
 
-- Install the `requirements.txt`
+-   Install the `requirements.txt`
 
-- Call the LLMs by running the script `python3 local-copilot.py` choosing to ask either Ollama or OpenAI.
+-   Edit the .env file with your OpenAI or other API keys and export it with a command, such as `export OPENAI_API_KEY="replace-with-your-openai-key"`
+
+-   Call the LLMs by running the script `python3 local-copilot.py` choosing to ask either Ollama or OpenAI.
     -   While using Ollama, you can pull any LLM model by running `ollama pull 'model-name'`, e.g. `ollama pull deepseek-r1`.
 
 ## Call LLMs using a RAG knowledge base
@@ -19,15 +21,15 @@ RAG allows ingesting relevant content based on your needs so the LLMs can provid
 
 ### Getting Started:
 
-- Create a (https://docs.python.org/3/library/venv.html)[Python] environment or ()[Conda] environment using an up-to-date Python version. This project uses Python version 3.11.5. You can use a command, such as: `conda create -n myenv python=3.11.5`.
+-   Create a (https://docs.python.org/3/library/venv.html)[Python] environment or ()[Conda] environment using an up-to-date Python version. This project uses Python version 3.11.5. You can use a command, such as: `conda create -n myenv python=3.11.5`.
 
-- Install the `requirements2.txt`
+-   Install the `requirements2.txt`
 
-- Call the LLMs by running the script `python3 rag-copilot.py`
+-   Call the LLMs by running the script `python3 rag-copilot.py`
 
-- Ingest new documents by passing the folder name, e.g.: `DeviceLocation-main`
+-   Ingest new documents by passing the folder name, e.g.: `DeviceLocation-main`
 
-- Choose to prompt either Ollama or OpenAI.
+-   Choose to prompt either Ollama or OpenAI.
     -   While using Ollama, you can pull any LLM model by running `ollama pull 'model-name'`, e.g. `ollama pull deepseek-r1`.
 
 ## License
