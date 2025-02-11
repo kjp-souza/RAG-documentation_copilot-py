@@ -1,0 +1,12 @@
+openai
+requests
+faiss-cpu
+chromadb
+langchain
+pypdf
+markdown
+tiktoken
+pyyaml  # Added YAML support
+sentence-transformers
+langchain-openai
+langchain-community
