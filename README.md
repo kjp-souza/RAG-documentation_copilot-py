@@ -2,6 +2,9 @@
 
 The first script `local-copilot.py` can call multiple LLM APIs (currently using only [OpenAI](https://platform.openai.com/docs/overview) and [Ollama](https://ollama.com/)) locally.
 
+The second script `rag-copilot.py` allows ingesting relevant content as knowledge base. 
+You can add your relevant documents, such as PDF, YAML or Markdown files.
+
 ## Call LLMs locally
 
 ### Getting Started:
