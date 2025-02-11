@@ -12,7 +12,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from langchain.schema import Document
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
+
 # Change to this to use OpenAI embeddings
 # from langchain_openai import OpenAIEmbeddings
 
@@ -67,7 +68,7 @@ def split_and_embed(docs):
 
     # embeddings = OpenAIEmbeddings()  # Change to this to use the OpenAI embedding model
     # Here, we are using an open-source embedding model:
-    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-m3")
+    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-base-en", model_kwargs={"device": "cpu"})
     vector_store = FAISS.from_documents(chunks, embeddings)
 
     index = vector_store  # Store the FAISS index
